@@ -1,7 +1,5 @@
+
 Jon Hallam
-
-
-
 
 
 Software Development Portfolio
@@ -43,209 +41,87 @@ Software Development Portfolio
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Contents
-
-Introduction3
-
-Team Roles Within GDS5
-
-Learning Projects5
-
-Designing Software for maintainability and reuse5
-
-IDE’s6
-
-Version Control7
-
-Sudoku Game8
-
-Cell9
-
-Board9
-
-Game10
-
-Improvements11
-
-TDD within GDS11
-
-FizzBuzz11
-
-Set Up11
-
-Testing and TDD12
-
-Debugging14
-
-Manual testing15
-
-Conclusion16
-
-Database Example16
-
-The Code18
-
-UI at GDS/Govuk20
-
-Search Performance Explorer21
-
-Backend26
-
-Jenkins30
-
-A/B Tests30
-
-Analysis32
-
-Conversion of Requirements33
-
-User Stories34
-
-Tasks35
-
-Trello35
-
-￼
-
-Page Break
-
-
-Introduction
-
 GDS or the Government Digital Service is a unit of the Cabinet Office that was formed in 2011 to transform the way in which the British public interacted digitally with the government. Their original goal was to bring together government services to one place and in 2012 the gov.uk website replaced direct.gov.uk as the primary access point to government digital services. Since then GDS has worked to improve or digitise old services and make the digital the default means of interacting with government. We are responsible for identifying the need for common services and tools and helping other departments to roll these out, providing model services to show what can be done, helping government find the right technology, setting and enforcing standards for digital services and leading the digital, data and technology function for government. Between 2016 and 2017 our priorities were;
 
-
-
 supporting the ongoing digital transformation of government
-
 championing service design - redesigning whole services across government to meet user needs, not just digitising individual transactions or reviewing isolated pieces of content
-
 expanding Government as a Platform to make it easier for government to build, iterate, re-use and retire services
-
 improving the availability, quality and use of government data
-
 improving skills, capability and leadership across government
-
 We worked on those priorities using the agile approach to software development with a large number of small interdisciplinary teams each working on a single project. Teams change around regularly and are able to share knowledge and expertise with each other in order that they can effectively deliver their targets. Each team creates a list of work that must be done and each individual within the team chooses what they should be working on at any given time. This creates a high level of individual freedom and things like flexi time and remote working options mean that GDS is a relaxed and relatively casual place to work. This informality and the importance placed on knowledge sharing means that GDS as an environment is intellectually as well as socially stimulating.
-
 Before anything else, GDS is a government department. We exist in order to make things easier for the British public. We do not have any commercial interests in the traditional sense but the projects that we work on often save money for the government and in turn the taxpayer. As such we do not have a competitive environment that surrounds us and we are not profit driven. We do however have to have high standards for ourselves and be accountable for our choices and the websites we have built focus heavily on ensuring usability for everyone that needs them. In order to achieve this our work is public facing; any member of the public can view our code online and understand the digital direction of government. This acts as an incentive to not only work well but to ensure that our work is within the bounds of the regulations that affect us such as GDPR. Some of our working freedom is limited because the very wide goals of the organisation are set by the government of the time. Our services have to be incredibly resilient for two major reasons; first and foremost because we have such a large number of users accessing our sites every day in order to undertake important tasks and secondly because as a government site we are a large hacking target.
+I am currently an apprentice developer and working towards being a software developer. This means that I sit in one of the aforementioned small, agile teams and get to decide what I work on a day to day basis.
 
-I am currently an apprentice developer and working towards being a software developer. This means that I sit in one of the aforementioned small, agile teams and get to decide what I work on a day to day basis. Teamwork is a huge part of my day to day work and is a cornerstone of the culture within GDS. I spend each day learning as much as possible from the other, more experienced members of my team. As a team we value working in a pair on work, this means two people working on one codebase at the same time from one computer. In order to do this successfully I have to listen carefully to my pair and be willing to take the lead when the situation calls for it. We rotate pairs regularly so that each member of the team can work on each piece of a project and with every other member of the team. This ensures that knowledge is shared and everyone gets a chance to meaningfully participate. Pairing well takes patience, good time management and the ability to listen properly to your pair in order to understand the direction of the work and the manner of proposed changes. This means that I have to maintain good working relationships with each member of the team so that we can pair together effectively. Pairing is not a static thing, it changes over time as you get more familiar with how the team as a whole works and how each member within it works. This change over time means that mature teams who have worked together for a log time are well placed and more effective at meeting the team goals and as such make a larger contribution to the wider goals of the company. Occasionally pairs will disagree over the direction in which they want to go. In cases like this it is important that each member appreciates the others position and objectively weighs the advantages of each idea before coming to a conclusion together. If a pair hits a wall and discovers that a piece of work they’re doing relies on something else it is up to them to work out how to move forward. The act of pairing makes each piece of work a team effort which in turn means that we can celebrate success of the whole team together when something is completed. Currently I feel that I am good at listening to others and have learnt a huge amount because of this through pairing. I think that I could benefit from taking charge more often, this would have the benefit of increasing my confidence in my own abilities and showing where my knowledge is lacking.
-Page Break
-
-
-
+Teamwork is a huge part of my day to day work and is a cornerstone of the culture within GDS. I spend each day learning as much as possible from the other, more experienced members of my team. As a team we value working in a pair on work, this means two people working on one codebase at the same time from one computer. In order to do this successfully I have to listen carefully to my pair and be willing to take the lead when the situation calls for it. We rotate pairs regularly so that each member of the team can work on each piece of a project and with every other member of the team. This ensures that knowledge is shared and everyone gets a chance to meaningfully participate. Pairing well takes patience, good time management and the ability to listen properly to your pair in order to understand the direction of the work and the manner of proposed changes. This means that I have to maintain good working relationships with each member of the team so that we can pair together effectively. Pairing is not a static thing, it changes over time as you get more familiar with how the team as a whole works and how each member within it works. This change over time means that mature teams who have worked together for a long time are well placed and more effective at meeting the team goals and as such make a larger contribution to the wider goals of the company. Occasionally pairs will disagree over the direction in which they want to go. In cases like this it is important that each member appreciates the others position and objectively weighs the advantages of each idea before coming to a conclusion together. If a pair hits a wall and discovers that a piece of work they’re doing relies on something else it is up to them to work out how to move forward. The act of pairing makes each piece of work a team effort which in turn means that we can celebrate success of the whole team together when something is completed. Currently I feel that I am good at listening to others and have learnt a huge amount because of this through pairing. I think that I could benefit from taking charge more often, this would have the benefit of increasing my confidence in my own abilities and showing where my knowledge is lacking.
+
 
 Team Roles Within GDS
-
 The roles required within a software development team vary massively depending on the product being produced. Within GDS we work in small teams using the agile methodology. The majority of people on most teams will be part of the development team. This can include a user researcher to work out how best to meet the user needs and a data analyst to measure how changes made by the software developers are affecting the customer experience. A Product manager organises the product backlog whist a Delivery manager sorts out any issues that the dev team are having and makes sure that stories within the backlog are being delivered. This can all be seen the (rudimentary) diagram below.
-
-
 
 Throughout this process all members of the team hold meetings to ascertain which pieces of work are the most important and to ensure that the team are working effectively and efficiently. Each member of the team is vital to every other doing their job.
 
 
+More background on the agile methodology
+This agile method of working that we use at GDS was designed as an alternative to the traditional waterfall method. The waterfall method of project management works from the top down through all of the software design lifecycle (SDLC). The SDLC collects the steps that a team needs to do for a piece of work, whether that is a whole project or small block of one, to be considered complete.
+
+Planning
+Planning covers the opening stage of software development. It’s not planning out what you’re going to do so much as whether there is a gap that needs to be filled. Once a product is through the planning stage it will generally be deemed to be feasible technically, economically and operationally. Whilst this is done at a high level at GDS before teams are created in order to assess the need for them, it is also done on a small scale on a per story basis by each team. To the left is the calendar invite for our fortnightly planning meeting where we discuss the validity of individual pieces of work in our backlog and whether we will work on them. The fact that we work on small agile teams that constantly iterate allows us to consider each piece of work carefully in this way.
+
+Defining
+Here we are working out the requirements for the program. This will be done with the help of market or customer analysts to ensure that the requirements are practicable and reasonable. Again in an agile environment this can be done in a small way and is often as simple as a series of developers adding to a Trello card in order to make it really clear what the story is meant to accomplish by way of acceptance criteria (see left for example).
+
+Designing
+This is the design of the architecture of the program. When this is complete the relationship between all of the modules within the software should have been established. This will be done in relation to the requirements that were set out in the previous stage. When I am working on a ticket this is often done when we kick off a story as a team or by myself before I actually start coding. Below is an architectural diagram that I produced for one of our applications. This particular application started as a small, compact project and was originally written by someone with a lot of experience in Ruby. Over time, classes have been added and the test suite has grown. This resulted in the app getting a little bloated and hard to understand, I produced this in order to draw attention to how difficult it is to work on this particular application. This is one of the joys of agile development, work can be added or removed at any time just by adding it to the backlog and showing why it should be a priority.
+
+Building
+Building is completed by software developers working completely within the architecture that was set out during the design process. A well-defined architecture and an organised code base will result in an easier job for the software developers. Evidence of my ability to build software is littered throughout my portfolio in the form of screenshots of code. The fact that I only develop in an agile environment doesn’t actually change the type of code I write but it does change how I work. Agile means that we have individual stories to work on that are created in an iterable way. Below are some screen grabs of Trello cards that I’ve worked on. Agile means that I had the choice of what cards to work on and input into their creation.
+
+
+Testing
+If the developers follow Test Driven Development (TDD) practices properly then testing is implemented before the writing of code. It is in place to ensure that the final product is well put together and free of bugs. A good test framework also means that new code can be added by someone unfamiliar with the code base much more easily. Like with the building stage, there are multiple screenshots of tests that I’ve written for many reasons in this document. Again, the nature of the tests will not be any different whether they’re done in agile or waterfall.
+
+Deployment
+After all other sections have been completed then the product can be deployed into the appropriate market or environment.
+
+Maintenance
+This should go on throughout the life of the product and will primarily involve the software developers fixing bugs that arise and adding functionality. That being said, in an agile environment this can be counted as doing all of the above steps again and again. The agile methodology allows us to constantly update and improve our services and talk to users at every stage.
+
+
+Where the agile methodology goes through these stages cyclically the waterfall methodology takes each of the stages to completion before moving on to the next. This means that both customers (or shareholders) and the developers can agree on that is to be delivered before any code is written. It also makes the whole process easily measurable; if everyone knows what is meant to be produced the project moves on in a linear way and it’s very easy to say how far along it is. The waterfall method also makes customer involvement unnecessary after the initial design stage.
+
+This traditional way of working does have a number of issues. There is no way in which the initial requirements can be changed, this means that any new, necessary functionality that is discovered during the stages after design cannot be added. The end product is not generally usable or showable before release, so customers cannot test a program before it is released. The set timeframe can often lead to functionality being dropped in favour of the work being completed on time.
+
+
 
 Learning Projects
-
-When I first joined GDS I had next to no coding experience. In order to improve my programming skills to the point where I could work on real projects I was asked to complete some practice projects. Some of the projects outlined below are of this nature because they better outline my ability to perform certain tasks than would have been possible if I had only included mission work.
-
-
+When I first joined GDS I had next to no coding experience. In order to improve my programming skills to the point where I could work on real projects, I was asked to complete some practice projects. Some of the projects outlined below are of this nature because they better outline my ability to perform certain tasks than would have been possible if I had only included mission work.
 
 Designing Software for maintainability and reuse
-
 Software should be written so that it can be reused. This doesn’t mean that you should try and use your photo editing suite to create spreadsheets but rather that your code is generic as possible.
 
+Consider the following scenario. As you can see below I’ve written a Ruby class “Person”. This person can have hobbies, pets and children and I’ve written a method to add each of these things. Now this code works, you can add something to each of the three arrays that I initialised at the top but, this code is rigid and hard to use. Consider what would happen if I added the myriad things that a person could have, books, cars, favourite biscuits, this class would get huge and confusing incredibly quickly and be filled with repeats of those ‘add’ methods at the bottom.
 
-
-Consider the following scenario, as you can see below I’ve written a ruby class “Person”. This person can have hobbies, pets and children and I’ve written a method to add each of these things. Now this code works, you can add something to each of the three arrays that I initialised at the top but, this code is rigid and hard to use. Consider what would happen if I added the myriad things that a person could have, books, cars, favourite biscuits, this class would get huge and confusing incredibly quickly and be filled with repeats of those ‘add’ methods at the bottom.
-
-
-
-Below what I’ve done is refactored the code and changed the data structure somewhat. It basically allows whoever’s using this code to add their own categories and decide what is important to each instance of the ‘Person’ class. This code is more readable and so more editable by a new developer. It’s also more reusable; if I had to create a ‘replace’ method, I could simply remove one thing and use this add method to bring in its’ replacement. Working in this way saves time in the long run by cutting down on the time it takes to understand existing code.
-
-
+Below what I’ve done is refactored the code and changed the data structure somewhat. It basically allows whoever’s using this code to add their own categories and decide what is important to each instance of the ‘Person’ class. This code is more readable and so more editable by a new developer. It’s also more reusable; if I had to create a ‘replace’ method, I could simply simply remove one thing and use this add method to bring in its replacement. Working in this way saves time in the long run by cutting down on the time it takes to understand existing code.
 
 IDE’s
-
-IDE’s or Integrated Development Environments are the programs within which code is written. IDE’s are designed to maximise the productivity of programmers. Some contain compilers or interpreters to help people see how their code will run within the IDE itself rather than using an external program. Others will create class diagrams to show developers how their classes fit together and interact. Personally I use different IDE’s depending on which language I’m coding in. For Ruby I’ll use Atom which is arguably a text editor rather than an IDE. I use it primarily because it doesn’t interfere too much with the act of coding, occasionally offering class or method names but allowing me to write all of my own code. When I write in Java I’ll use eclipse. This is because eclipse offers a lot of auto-completion and functions to write standard methods. I find this helpful because of the more complex syntax and specific nature of Java.
-
-
+IDEs or Integrated Development Environments are the programs within which code is written. IDEs are designed to maximise the productivity of programmers. Some contain compilers or interpreters to help people see how their code will run within the IDE itself rather than using an external program. Others will create class diagrams to show developers how their classes fit together and interact. Personally, I use different IDEs depending on which language I’m coding in. For Ruby I’ll use Atom which is arguably a text editor rather than an IDE. I use it primarily because it doesn’t interfere too much with the act of coding, occasionally offering class or method names but allowing me to write all of my own code. When I write in Java, I’ll use Eclipse. This is because Eclipse offers a lot of auto-completion and functions to write standard methods. I find this helpful because of the more complex syntax and specific nature of Java.
 
 Version Control
-
-Version control systems are particularly useful in modern software development environments where you have multiple developers working on individual bits of code. Having a version control system allows the team to record who made specific changes and what bugs are present in which version. At GDS we use github for version control, it allows developers to work on individual parts of a program in isolation from each other. This allows large groups of developers to work on programs or websites at the same time on separate branches before merging them into the main trunk of the code.
-
+Version control systems are particularly useful in modern software development environments where you have multiple developers working on individual bits of code. Having a version control system allows the team to record who made specific changes and what bugs are present in which version. At GDS we use git, with the GitHub web interface, for version control, it allows developers to work on individual parts of a program in isolation from each other. This allows large groups of developers to work on programs or websites at the same time on separate branches before merging them into the main trunk of the code.
 Individual programs often have a type of version control held within their Gemfiles. These basically tell a program to use specific version of a gem or dependency so that it’s not broken by gem updates. In helping developers know what version of a gem a program uses, the Gemfile provides information on how to interact with the individual gems as different versions will behave differently.
-
-The screengrab above is the version file from a project that I’ve been working on recently. It’s an add on for ruby programmes that allows a team to extract metrics. We’ve built this and all other aspects of our environment from scratch so versioning is important as it allows us to update other teams on our work and show when we’ve added functionality.
-
-
+The screengrab above is the version file from a project that I’ve been working on recently. It’s an add on for Ruby programmes that allows a team to extract metrics. We’ve built this and all other aspects of our environment from scratch so versioning is important as it allows us to update other teams on our work and show when we’ve added functionality.
 
 Sudoku Game
-
-I decided to design and build a Sudoku solving program to test my coding ability. My 1st attempt was very bad, around 1500 lines of copied and pasted code, impossible to debug and couldn’t work out whether it had finished the puzzle or not.
-
-
+I decided to design and build a Sudoku solving program to test my coding ability. My 1st attempt was very bad, around 1500 very similar lines of unintelligent code, impossible to debug and a finished program that couldn’t work out whether it had finished the puzzle or not.
 
 I decided to start again from scratch and devise a new way of solving the problem that didn’t involve a single array with up to 729 digits in it. I started by considering what the game consisted of and created three classes, the Game, Board and Cell. The Game was initialised with a set of numbers that were already known, this in turn made a Board that contained 81 Cells that had a list of possibilities.
-
-So the Game class contains the game world (an instance of the Board class) and an array with all of the set values. When the class is initialized with the set values array, the Game class creates the board, populates it with all 81 cells and then removes all possibilities from the cells that have set values. It will then go through each of the rows and remove numbers from each cell’s possibilities based on the other numbers in that row. It then does the same thing for the columns and blocks. Then it goes through each row, column and block and checks to see if there are any cells that can either only be one thing or that hold the only instance of a possibility for that container. When it finds one of these it removes the cells possibilities and adds the cell to the list of set values. This process then continues until all of the values are set and the puzzle is complete.
-
+The Game class contains the game world (an instance of the Board class) and an array with all of the set values. When the class is initialized with the set values array, the Game class creates the board, populates it with all 81 cells and then removes all possibilities from the cells that have set  values. It will then go through each of the rows and remove numbers from each cell’s possibilities based on the other numbers in that row. It then does the same thing for the columns and blocks. Then it goes through each row, column and block and checks to see if there are any cells that can either only be one thing or that hold the only instance of a possibility for that container. When it finds one of these it removes the cells possibilities and adds the cell to the list of set values. This process then continues until all of the values are set and the puzzle is complete.
 Cell
-
 The cell class is the smallest section of my codebase but perhaps the most important. It holds an amount of information about itself including its’ column, row and block. It also holds an array of possibilities that are diminished by other methods and whether or not the program is certain of a cells value.
-
-
 
 Board
 
-
-
-The board class sits above the cell class and initialises 81 instances of cell within a multidimensional array. This means that the entire board is available to the game class that sits above the board. This allows each cell to be compared to every other cell within its’ row, column or block
-Page Break
-
-
-
+The board class sits above the cell class and initialises 81 instances of cell within a multidimensional array. This means that the entire board is available to the game class that sits above the board. This allows each cell to be compared to every other cell within its’ row, column or block
 
 This program is meant to be run from the command line and I wanted to be able to show the current state of the board and wrote a method to do just that. The output can be seen below.
 
@@ -258,97 +134,69 @@ This program is meant to be run from the command line and I wanted to be able to
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 Game
+The game class initialises all of the other classes in the program and also holds the necessary methods to complete the puzzles. When the game class is started it initializes an instance of the board class and then goes along on sets all of the known values of the cells. From this point the game class uses the methods that were laid out in the earlier class diagram to actually solve the puzzle. The Game represents the biggest difference between my original solution (available on GitHub) and this one and that is the abstraction of logic. My original solution required me to copy and paste the same lines over and over again, occasionally changing them slightly to effect different bits of a huge array but generally doing much the same thing as each other. In this solution that logic is abstracted into methods that can repeat behaviour upon any array that is passed to them. This means that there is much less repetition of code and that the codebase is more easily maintainable.
 
-The game class initialises all of the other classes in the program and also holds the necessary methods to complete the puzzles. When the game class is started it initializes an instance of the board class and then goes along on sets all of the known values of the cells. From this point the game class uses the methods that were laid out in the earlier class diagram to actually solve to puzzle.
+Visualisation
+When I first started this project, I wanted to be able to show the program solving a problem step by step in order to highlight the logic that was being used. I used a Ruby gem called gosu that would allow me to create a window and show the cells changing numbers in much less than real time. This worked by inheriting (line 5 below, the syntax for inheritance in ruby is very simple but that is inheritance) from the base Gosu::Window class and setting images that showed each number. Inheriting in this way allowed me access to all of the necessary gosu methods without writing functionality myself. Using inheritance here was really the only thing that I could have done. The only other options would have been to either write my own visualiser which would have been far too much work or initialising an instance of the Gosu::Window class but that could have left me having to redefine methods in order to make things work which would also have been unnecessarily complicated.
 
 
 
 
 
 Improvements
+It has been a few months since I worked on this puzzle and looking back on it has shown that there are many improvements that could be made. The most fundamental change I would make would be to reorder the classes; as I see it now, the game class should only be used for viewing the board which should contain the majority of the logic. As it stands I haven’t used the concept of encapsulation as much as I should: there are private methods in the Cell class but nowhere else. Changing the class structure would allow better use of encapsulation and allow me to hide methods that are not needed by other classes. Much of the code could also be refactored to be more efficient, use fewer loops and potentially make it solve harder problems. Part of this includes the polymorphisation of some of the methods. As it stands there is a lot of repetition of methods, the remove_column_possibilities, remove_row_possibilities and remove_block_possibilities methods all do roughly the same thing. It would be more useful and much cleaner to just create a remove_possibilities method that could be called any given array. This is part of the benefit of object-oriented programming, because of the way that these classes fit together and the nature of how objects are used, changing the program in this way shouldn’t be too tricky. As such I’ve decided to try an implement this change after over a year of not having touched this git repo in order to show my ability to solve problems.
+Now there are 23 tests that all pass and 6 methods that seem to have far too much repetition between them. The last method that is used to actually solve the problem is especially bad and unintelligent. I’ll try to fix this as I go along too.
 
-It has been a few months since I worked on this puzzle and looking back on it has shown that there are many improvements that could be made. The most fundamental change I would make would be to reorder the classes; as I see it now, the game class should only be used for viewing the board which should contain the majority of the logic. Much of the code could also be refactored to be more efficient, use fewer loops and potentially make it solve harder problems. This is part of the benefit of object oriented programming, because of the way that these classes fit together and the nature of how objects are used, changing the program in this way isn’t too tricky.
+To start off with I want to make small changes that won’t break anything so that the tests still work properly. It’s easier to make lots of small changes than it is to create a new architecture in one go.
 
+The first thing that I did was to look at the existing code and work out what was being done. The remove_row_possibilities method works out which values in a row are set and then removes those as possible values from all other cells within the row. It does this over the whole board.
 
+I then created a remove_possibilites(set) method. It does exactly the same thing but only expects a single array as an input which allowed me to remove most of the logic from the old method. Unfortunately, this resulted in my tests failing. I added a binding.pry command in which allows me to jump into a ruby console in the terminal whilst the code is running. I added the old each function in alongside the code I wrote and discovered that it was including nil values which in turn which meant that later methods weren’t working as expected. After further fiddling I ended up with this.
+The issue was that if the map iteration found that the condition “if cell.set” was returning false then it added a nil value to the array. I could have fixed this by calling “compact” on the array but this solution means I am more in control of the data that is circulating throughout my program.
 
-The code has been uploaded to github - https://github.com/JonathanHallam/sudoku2
+The next thing to do is remove the “remove_some_possibilities” methods. These three methods are always called together so I will create a new method that does the job of all three methods.
+This fix meant that I had to change the initialisation of the board class so that it could return the different rows, columns and blocks but this small change allowed me to remove a tonne of logic that was repeated throughout the game class.
 
+What I will now do is to fix the check_and_update methods in the same way. The result of that can be seen below. This method is quite similar to the one that it replaces but is more versatile. The update_all_possibilities method is also very similar to the remove_all_possibilities method that I made earlier. It would be possible to cut down on the codebase further by creating a new method that does the same thing but allows a block of code to be passed in as an argument to reduce the repetition further but given that I’ve cut the class in half, removed 6 tests and simplified the logic doing more may be excessive.
+
+This is an example of a fundamental development principle called abstraction. Abstraction is the removal of functionality until the thing has been reduced to a set of key characteristics. What I’ve done is to abstract the game logic into the game class and to cut down on the number of things that that class can do. The cell and board only know about themselves, it is arguable that I could take the abstraction further and delegate the removal of possibilities to the cell but as is I am happy that as it stands all the logic has been moved into one overarching game class. I also feel that each of the classes is named appropriately to describe the function that it does. This is another important element of abstraction. In a way, all object-oriented programming is an abstraction, my classes aren’t actually a game of sudoku, they are an abstraction of one, they take the important elements of a game and put them in code. Names then play an important part in how a developer understands how a thing has been abstracted into code. Strictly speaking full abstraction is not required to make code run but it is a fundamental part of writing good code. It helps to keep the code base logically organised and is a technique that most developers will do without thinking too much about.
+
+The simplification diff can be seen here -
+https://github.com/JonathanHallam/sudoku2/pull/4/files
+
+Other Improvements
+Whilst I was going through this process I made a few changes that weren’t strictly related to the big changes above. I utilised encapsulation in the game class and made a few methods private. Encapsulation is the annexing away of code so that it cannot be called by another class. This is a pattern that is used quite regularly when the private methods are quite small. This is generally because encapsulating these methods means that they cannot be called directly in tests which in turn requires that their functionality is tested using the other methods (that have not been encapsulated) as a proxy. Encapsulation is really just good practice. I use it regularly when something doesn’t need to be explicitly tested or used by another class. Like abstraction it helps keep code organised and it also helps methods from being called accidentally from outside a class. Like abstraction it is something that isn’t really thought too heavily about but that should be done for the sake of best practices.
+
+The code has been uploaded to GitHub -
+https://github.com/JonathanHallam/sudoku2
+
+Fundamentals of Programming
+Within this sudoku project I have used three of the four fundamental components of object-oriented programming. These fundamentals are Inheritance (used in the visualisation section on page 12), Encapsulation (immediately above), Abstraction (throughout but explained on page 15) and Polymorphism. Polymorphism comes from the Greek for “many forms” and describes an object that can take more than one form. this is not limited to individual objects and also extends to methods that can take different kinds of input. The classic example of this can be seen to the left. In that example the “speak” method can be used on a cat dog or horse and it will return a different result depending on which class it is called on.
+
+This kind of explicit polymorphism is actually fairly seldom used. much more common is the subtle form outlined below. The code below is written in go and it is able to change its behaviour based on the input that it gets. It is a bit of code that scales instances of an application up or down and does not receive instructions on which way to go. There were a few ways that we could have gone with this code, it would have been possible to detect what kind of input a method was getting and then write methods for all of the possible options. This solution means that we didn’t have to add cumbersome and very similar methods to get something relatively simple done. In this instance, Polymorphism helped keep the code succinct. This is a sort of low-level polymorphism is used more regularly than the explicit kind used above. The full change for this pull request can be seen here.
+
 
 
 TDD within GDS
-
 Within GDS we try to primarily use TDD. It is however quite unusual that we create new things from scratch and our code base is huge. These things combined mean that TDD is not always the most efficient way to write code. In the instances where TDD is not used properly, tests are added after the code is written in order to make sure that future updates do not break the code base and so that developers who come to work on the code can get up to speed with how it is meant to work.
 
-
-
 FizzBuzz
-
 FizzBuzz is a common beginner programming challenge. It accepts a number as input, if the number is divisible by 3 it returns “Fizz”, if it’s divisible by 5 returns “Buzz” and if it’s divisible by 3 and 5 returns “FizzBuzz”.  I’m going to write this in Ruby and test it all the way through using Rspec, a testing framework for Ruby.
 
-
-
 Set Up
-
 The first thing that I have to do is set up the basic file structure. Here I’m using an application framework called Sinatra so I’ve set the application up in a way that Sinatra will recognise. The ‘public’ folder contains public assets which is anything that the .html files might need to render a page properly. Here that’s just a .css file but could also include some JavaScript.
 
-
-
-The ‘views’ folder contains the renderable pages in .html and .erb format. Ideally these won’t contain any actual logic and will be limited to just displaying information that they’re given. The ‘fizzbuzz.rb’ file you can see at the bottom contains the program logic, that’s Sinatra’s instructions for what to do with requests and the inner working of the Ruby logic. The Gemfile and Gemfile.lock file below contain information about the gems and Ruby version that are being used. Finally the ‘spec’ folder is where we keep all of the tests.
-
-
-
+The ‘views’ folder contains the renderable pages in .html and .erb format. Ideally these won’t contain any actual logic and will be limited to just displaying information that they’re given. The ‘fizzbuzz.rb’ file you can see at the bottom contains the program logic, that’s Sinatra’s instructions for what to do with requests and the inner working of the Ruby logic. logic. The Gemfile and Gemfile.lock file below contain information about the gems and Ruby version that are being used. Finally, the ‘spec’ folder is where we keep all of the tests.
 Testing and TDD
-
 One of the key points of TDD is that tests are written before code. This means that you know that your code is having the desired effect. With this in mind the first thing that I’m going to do is write some tests in our ‘fizzbuzz_spec.rb’ file.
-
-So you can see that I have two tests, the first testing for a response upon trying to load the homepage and the second to check for a specific line of text. Whilst building these tests I ensured that there were expectations in place (as can be seen on lines 13 and 18). This means that later when the tests are run I will be able to see exactly why something fails.
-
-
+You can see that I have two tests, the first testing for a response upon trying to load the homepage and the second to check for a specific line of text. Whilst building these tests I ensured that there were expectations in place (as can be seen on lines 13 and 18). This means that later when the tests are run I will be able to see exactly why something fails.
 
 Now when I run ‘rspec’ on the command line I get this message. It basically says that the tests couldn’t be accessed because the class ‘FizzBuzzer’ that we were trying to test doesn’t exist. This is easily rectifiable.
 
 
 
-
-
-
-
-Adding these lines to ‘fizzbuzz.rb’ means that the tests will now recognise the class and actually run the tests. The tests fail because there’s no logic within the ‘FizzBuzzer’ class. This however is the point; I don’t want to write any actual code until the tests are in place.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Now that the tests are running properly I can actually start populating the Ruby app with some logic. This can’t go too far though and I need to write the bare minimum so that the tests pass.
-
-
-
+Adding these lines to ‘fizzbuzz.rb’ means that the tests will now recognise the class and actually run the tests. The tests fail because there’s no logic within the ‘FizzBuzzer’ class. This however is the point; I don’t want to write any actual code until the tests are in place. Now that the tests are running properly I can actually start populating the Ruby app with some logic. This can’t go too far though and I need to write the bare minimum so that the tests pass.
 
 
 The first function that I’ve written within the “FizzBuzzer” class tells the browser to load the “home.html” file when it receives a “get ‘/’”. In short it loads the homepage. The second just gets the app to run if it’s not already. As you can see, the result of this is that the first test now passes but the second one doesn’t. Because I set expectations, the terminal tells me exactly what’s wrong by outlining what was expected with what was recieved. This means that I can see the second test fails because there’s not anything in the “home.html” file so when it reads it, it doesn’t get the response it was expecting. This can be fixed with one line of code within the “home.html” file. Now that the tests pass, I can continue this process of writing tests, then coding until I have a working app.
@@ -356,136 +204,72 @@ The first function that I’ve written within the “FizzBuzzer” class tells t
 
 
 
-
 Debugging
-
 Whilst making this application I didn’t run into any real problems but if the application being written was a little more complex I could have utilised the ‘pry’ gem. Pry allows me to look at the variables in the code as they are being used. This means that I can see any variables that aren’t behaving in the expected way and potentially making the program fail.
-
 In order to get pry to work I’ve added it to my Gemfile and run bundler. Then within the file I want to look at I’ve added the line ‘binding.pry’ before any chance of it returning a variable. Now if I run the program locally when it finds the need to execute this line of code it will stop so that I can see the inner workings on the command line.
-
 As you can see, the program has reached line 6 and the ‘binding.pry’ command and has allowed me to check the variables that are currently active. In this example I’ve proved that ‘num’ was 30; the number that was entered into the form on the homepage. In being able to do this I can find out if a function is giving a value that I’m not expecting and get closer to fixing it.
 
-
-
 Manual testing
-
 I now have a fully working program that has been tested and debugged properly from start to finish. This is the point that manual testing starts, actually using the program from start to finish and working out any problems we might have. The program works but it’s not particularly nice to use. The form on the homepage is small, ugly and uninformative whilst the results screen is lacking in content and a button to go back to the home screen, meaning that if you want to enter another number you’re forced to press the back button on your browser.
-
-
 
 Thanks to proper manual testing I can now go back to the application write more tests and make the application more user friendly.
 
 
-
-
-
 Conclusion
+My Sinatra-based FizzBuzzer is now more user friendly; everything is aligned centrally making it more readable and easier to use, both the number you enter and its FizzBuzz result are displayed on the results page, there’s a big green button that lets the user go back to the start to enter another number and all of the numbers from one to 1,000,000 scroll across the bottom slowly for more of an idea on what’s actually going on. This whole application was tested throughout its’ development cycle and the result is an application that I knew would work was created more quickly and with fewer bugs than one that would have been built without testing.
 
-My sinatra based FizzBuzzer is now more user friendly; everything is aligned centrally making it more readable and easier to use, both the number you enter and it’s FizzBuzz result are displayed on the results page, there’s a big green button that lets the user go back to the start to enter another number and all of the numbers from one to 1,000,000 scroll across the bottom slowly for more of an idea on what’s actually going on. This whole application was tested throughout its’ development cycle and the result is an application that I knew would work was created more quickly and with fewer bugs than one that would have been built without testing.
-
-
-
+
 Database Example
-
 Hacker News is a basic looking, user populated news site that is popular with people within the tech industry. Users are allowed to submit stories, comment and vote on those that have been uploaded. As a training exercise set by GDS, I had to create a clone of Hacker News. The idea was that it would teach us how to link a site to a database and have users create entries.
 
-
-
-The core of its’ workings revolve around a relational database with three tables, submissions, comments and users. Each entry within the submission table contains the information that needs to be displayed and uses an incrementing id as the primary key. This id is then used within the comments section under the heading ‘parent_id’ as a foreign key.
-
-Each comment also has its’ own comment_id that’s used as the primary key, this allows the sinatra application that shows the news site to order them properly and attach them to the right submission. The relationship between these two tables then is many to one, with many comments being attached to one submission. The third table is the ‘users’ table which exists somewhat separately and holds information on people who have signed up to the site.
-
+The core of its workings revolve around a relational database with three tables, submissions, comments and users. Each entry within the submission table contains the information that needs to be displayed and uses an incrementing id as the primary key. This id is then used within the comments section under the heading ‘parent_id’ as a foreign key.
+Each comment also has its own comment_id that’s used as the primary key, this allows the Sinatra application that shows the news site to order them properly and attach them to the right submission. The relationship between these two tables then is many to one, with many comments being attached to one submission. The third table is the ‘users’ table which exists somewhat separately and holds information on people who have signed up to the site.
 This information is then used to give context to comments and submissions and changes the homepage slightly.
 
-
-
 The Code
-
-To create this website I used a mixture of Ruby, HTML, CSS and SQL. Ruby covers the backend functionality, creating objects to pass to the frontend that is written in HTML and CSS. SQL is used within the ruby code to interact with the database. To do this I simply wrote methods to enact three of the four basic functions in CRUD. CRUD is the acronym that describes the four basic database functions; create, read, update and delete. The ‘create’ element comes into play when someone either adds a new link to the submission page or signs up to the service.
-
+To create this website, I used a mixture of Ruby, HTML, CSS and SQL. Ruby covers the backend functionality, creating objects to pass to the frontend that is written in HTML and CSS. SQL is used within the ruby code to interact with the database. To do this I simply wrote methods to enact three of the four basic functions in CRUD. CRUD is the acronym that describes the four basic database functions; create, read, update and delete. The ‘create’ element comes into play when someone either adds a new link to the submission page or signs up to the service.
 The ‘db_connection’ method simply tells ruby which database to access and then executes a string of SQL within that database.
 
-
-
 The ‘read’ functions simply retrieve all of the data from a table so that it can be rendered.  It also orders it appropriately so that everything makes sense. This is done in SQL because the inbuilt sorting function is far quicker than doing it in ruby.
-
 The ‘update’ function is slightly more complex and is used when a user votes an article up or down. First the method retrieves the submission that’s being voted on from the database. It then takes its’ score and increments it the appropriate way. Finally it updates the submissions table with the new score and (within the db_connection method) closed the connection to the database.
 
 
-
-
-
 Conclusion
-
 In this this section we’ve looked at the basic theories of databases, their uses and the CRUD principals. We’ve looked at the different relationships that can exist between tables and how they can be used. We’ve then seen a brief overview of DBMS’s and how databases are accessed and maintained. Through the hacker news clone, we’ve then seen how Ruby can be used to connect to a database, how SQL can be used to enact the major CRUD functions and how we can transform the data from a database into a format that is useful and renderable.
 
-
-
-UI at GDS/Govuk
-
-As a rule, when designing an application for govuk, developers have to make sure that everyone who needs to use a service can. Whilst at first this may seem simple, when you consider that government services have to be used by almost all of the British public at some point, this becomes a lot trickier. As GDS moves a lot of services that were previously paper-based on to electronic platforms, one of the largest groups that developers have to consider are those who might not be particularly familiar with how to use computers. This means that we do a huge amount of user research to help make our frontend applications easy to read and logical to work through. Luckily this also helps people whose first language might not be English. These people represent a relatively large group that have an extra need when it comes to accessing our services. A smaller minority that must be considered would be those who have a visual impairment. Many people with vision loss use a screen reader to read out the contents of a webpage or a refreshable braille display. Websites that have a lot of overlapping data or rely on javascript can make these unusable. Government researchers will often visit people’s houses to see how these people interact with government services so that their needs are met. While these user groups only represent a small fraction of the considerations that government designers have to make, they do go some way to showing the level to which UI should be considered when designing good services.
+UI at GDS and on the GOV.UK teams
+As a rule, when designing an application for GOV.UK, developers have to make sure that everyone who needs to use a service can. Whilst at first this may seem simple, when you consider that government services have to be used by almost all of the British public at some point, this becomes a lot trickier. As GDS moves a lot of services that were previously paper-based on to electronic platforms, one of the largest groups that developers have to consider are those who might not be particularly familiar with how to use computers. This means that we do a huge amount of user research to help make our frontend applications easy to read and logical to work through. Luckily this also helps people whose first language might not be English. These people represent a relatively large group that have an extra need when it comes to accessing our services. A smaller minority that must be considered would be those who have a visual impairment. Many people with vision loss use a screen reader to read out the contents of a webpage or a refreshable braille display. Websites that have a lot of overlapping data or rely on JavaScript can make these unusable. Government researchers will often visit people’s houses to see how these people interact with government services so that their needs are met. While these user groups only represent a small fraction of the considerations that government designers have to make, they do go some way to showing the level to which UI should be considered when designing good services.
 
 
 
 Search Performance Explorer
-
-Whilst working within the GovUk search team I was tasked with designing and building an application that can compare search results between different environments, code bases or sides of an a/b test. It started out as a small project designed to get me up to speed with Ruby on Rails but quickly started being useful. At this point more members of the team became involved with the project and started making requests for features. These ranged from small things like adding in a new a/b test (see below) to much larger features like adding a new environment (seen in part here but in full on Github). These requests eventually had to be made in a more formal way and recorded so that they could be prioritised and worked on accordingly. For this we made a new trello board that other members of the team could write cards to, I could then work out which cards held the greatest value for the most people and worked through the backlog of tickets. Unfortunately since doing this the search team has been dissolved and the trello board deleted so I can’t screenshot it but, links to dead cards still exist in pull requests like the one above.
-
-
+Whilst working within the GOV.UK search team I was tasked with designing and building an application that can compare search results between different environments, code bases or sides of an a/b test. It started out as a small project designed to get me up to speed with Ruby on Rails but quickly started being useful. At this point more members of the team became involved with the project and started making requests for features. These ranged from small things like adding in a new a/b test (see below) to much larger features like adding a new environment (seen in part here but in full on GitHub). These requests eventually had to be made in a more formal way and recorded so that they could be prioritised and worked on accordingly. For this we made a new trello board that other members of the team could write cards to, I could then work out which cards held the greatest value for the most people and worked through the backlog of tickets. Unfortunately since doing this the search team has been dissolved and the trello board deleted so I can’t screenshot it but, links to dead cards still exist in pull requests like the one below.
 
 It’s worth noting at this point that my application is only intended for use by a few members of the team that I work on, it’s not public facing and so many of the design ideals that I mentioned above don’t really apply. What I have had to do is make sure that my tool is easy to use and that my team members could get the information from it that they needed without having to wrestle with an uncooperative interface.
-
 Frontend
+The first thing that I did was to try and make my application look as much like a GOV.UK website as possible. I found some guidance on how our front end was meant to look and emulated it as far best I could. I did this with a mix of hard-coded html and scss (see screenshots). I was quite happy with the result and the code that underpinned it worked well enough. Every week we would have a show and tell where members of the team could present work that they’d been doing to the rest of the team. This was important because it shared knowledge and ensured that each member of the team had a reasonable knowledge of different bits of the code base. This in itself was important because it made each team member more versatile and as such more capable. Moving around between different parts of a codebase is fundamental to working in an agile environment and working on a team that manages such a codebase. This was understood by each member of the team and because of this each member was always willing and capable of participating. In one such meeting I did a live demo of the tool. Previous to this I had been the only person working on the search performance explorer and only  few team members had any familiarity with the application that I was building. This meant that I had to describe what it was doing on quite a low level but not getting so technical that non developers on the team would feel lost. To do this as effectively as possible I utilised a number of different methods of communication. To start of with I explained the rationale behind building the application and showed a diagram of how it was put together. I then did a live demonstration of how to use it. Live demonstrations are notorious for going wrong and this may have been a little risky or could have put people off of using my tool but, given that it was quite a small team, had this happened I’ sure all would have been forgiven. Explaining a project that I knew well on a technical level did have the potential to be a bit much to take in for the non technical people on the team but through taking a relaxed tone, slowing down my speech and repeating important points I managed to get convey the appropriate information. I also included time for questions at the end meaning that everyone on the team, irrespective of expertise, would know what my application was for and how it functioned. Sadly the presentation was live so I didn’t make a presentation and it was relatively informal so there is no email chain. I’ve included the top of a calendar invite below from around that time as the only extant artifact.
 
-The first thing that I did was to try and make my application look as much like a gov.uk website as possible. I found some guidance on how our front end was meant to look and emulated it as far best I could. I did this with a mix of hard-coded html and scss (see screenshots). I was quite happy with the result and the code that underpinned it worked well enough. Every week we would have a show and tell where members of the team could present work that they’d been doing to the rest of the team. This was important because it shared knowledge and ensured that each member of the team had a reasonable knowledge of different bits of the code base. This in itself was important because it made each team member more versatile and as such more capable. Moving around between different parts of a codebase is fundamental to working in an agile environment and working on a team that manages such a codebase. This was understood by each member of the team and because of this each member was always willing and capable of participating. In one such meeting I did a live demo of the tool. Previous to this I had been the only person working on the search performance explorer and only few team members had any familiarity with the application that I was building. This meant that I had to describe what it was doing on quite a low level but not getting so technical that non developers on the team would feel lost. To do this as effectively as possible I utilised a number of different methods of communication. To start with I explained the rationale behind building the application and showed a diagram of how it was put together. I then did a live demonstration of how to use it. Live demonstrations are notorious for going wrong and this may have been a little risky or could have put people off of using my tool but, given that it was quite a small team, had this happened I’ sure all would have been forgiven. Explaining a project that I knew well on a technical level did have the potential to be a bit much to take in for the non technical people on the team but through taking a relaxed tone, slowing down my speech and repeating important points I managed to get convey the appropriate information. I also included time for questions at the end meaning that everyone on the team, irrespective of expertise, would know what my application was for and how it functioned.
+This feedback was generally good but one of the key things that was brought up was that I could have saved time by utilising a front end gem that GOV.UK uses. This gem basically allows users to import readymade CSS classes (right) to make their sites closer to GOV.UK standard.
 
+The result was view above, as you can see, the highlight on results is less strong, the headers have changed, the form is a slightly different shape and there is a new search box on the results page. Over time I made more changes, there was more feedback from the team and I worked to make the frontend of the tool as intuitive and easy to use as possible. Through making small changes and listening to this feedback, the design was been updated, JavaScript was brought in to hide certain objects depending on selections and the tool is easier to use. I also added a series of new features that allow users to see extra information about each of the search results. As the requirements for the programme changed, I continued to add new features and change the way the people interact  the site. This was always done through the proper channels with developers requesting changes on the Trello board, me prioritising them with input from my technical lead and then doing the necessary work.
 
-
-This feedback was generally good but one of the key things that was brought up was that I could have saved time by utilising a frontend gem that Govuk uses. This gem basically allows users to import readymade css classes (right) to make their sites closer to Govuk standard.
-
-
-
-The result was view above, as you can see, the highlight on results is less strong, the headers have changed, the form is a slightly different shape and there is a new search box on the results page. Over time I made more changes, there was more feedback from the team and I worked to make the frontend of the tool as intuitive and easy to use as possible. Through making small changes and listening to this feedback, the design was been updated, javascript was brought in to hide certain objects depending on selections and the tool is easier to use. I also added a series of new features that allow users to see extra information about each of the search results. As the requirements for the programme changed I continued to add new features and change the way the people interact with the site. This was always done through the proper channels with developers requesting changes on the trello board, me prioritising them with input from my technical lead and then doing the necessary work.
-
-
-
-Sadly the search team was dissolved and the was project stopped. When this happened we were told that in the future a new search team may take up where we left off and continue our work. As such I made sure that the README for the search performance explorer was up to date. There was no need for a formal hand over because there was no team to immediately take over our work. The README was all that was really necessary to ensure that someone would be able to make changes to the repo. It outlines what the program does, why it exists, how to use it and how to run the test suite, it can be seen in full here. The constant reviewing of code has ensured that it is all in a workable state and that it can be easily picked up, understood and worked on by a new developer.
-
-
+Last year the search team was dissolved and the was project stopped. When this happened we were told that in the future a new search team may take up where we left off and continue our work. As such I made sure that the README for the search performance explorer was up to date. There was no need for a formal hand over because there was no team to immediately take over our work. The README was all that was really necessary to ensure that someone would be able to make changes to the repo. It outlines what the program does, why it exists, how to use it and how to run the test suite, it can be seen in full here. The constant reviewing of code has ensured that it is all in a workable state and that it can be easily picked up, understood and worked on by a new developer.
 
 Backend
+The backend of this application relies on a number of different Ruby classes and objects to call on the API and manipulate the reply into a format that can be rendered by the frontend code. The frontend is written in an implementation of eRuby, a templating system called ERB. ERB allows a developer to put ruby logic into a text document or in this case HTML.
 
-The fundamental concepts of human-computer interaction or user experience design
-
-The development practices leading to a high-quality user interface, and the programming techniques required to construct a graphical user interface.
-
-
-
-The backend of this application relies on a number of different Ruby classes and objects to call on the API and manipulate the reply into a format that can be rendered by the frontend code. The frontend is written in an implementation of eruby, a templating system called ERB. ERB allows a developer to put ruby logic into a text document or in this case HTML.
-
-
-
-Above you can see how the forms are put together in a mix of HTML and ruby using ERB. It utilises ruby classes that are stored within other files along with some methods that are specific to rails to make everything work. Writing code in this way allows me to remove any logic from the frontend code which helps anyone who wishes to edit the program to quickly grasp how the program is arranged and edit it more easily. The diagram below shows a rough overview of how the app behaves and how the backend code interacts with the frontend to create something that the end user sees and interacts with.
+Above you can see how the forms are put together in a mix of HTML and Ruby using ERB. It utilises Ruby classes that are stored within other files along with some methods that are specific to Ruby on Rails, the web framework, to make everything work. Writing code in this way allows me to remove any logic from the frontend code which helps anyone who wishes to edit the program to quickly grasp how the program is arranged and edit it more easily. The diagram below shows a rough overview of how the app behaves and how the backend code interacts with the frontend to create something that the end user sees and interacts with.
 
 
 
 
 
+One of the slightly less obvious ways in which I had to consider human interaction with my app was the maintenance of its codebase. GOV.UK is run in an agile way and teams often move around. I am not working on the search team anymore, and there may come a point where someone else now on the team has to work on my code. This is another action I have to consider when writing my code because while I might understand a method or why something is written in the way it is while I’m writing it, it might take someone quite a lot of time to work it out if it’s not obvious or just plain illogical. As an extreme example, at one point I had a method that created all of the methods to pull different information from my JSON response.
 
-
-
-
-
-
-One of the slightly less obvious ways in which I had to consider human interaction with my app was the maintenance of its’ codebase. Govuk is run in an agile way and teams often move around so while I am currently working on the search team, I won’t be here forever and there may come a point where someone else has to work on my code. This is another action I have to consider when writing my code because while I might understand a method or why something is written in the way it is while I’m writing it, it might take someone quite a lot of time to work it out if it’s not obvious or just plain illogical. As an extreme example, at one point I had a method that created all of the methods to pull different information from my JSON response.
 
 Metaprogramming was a new concept for me and I may have taken it a bit far. The piece of code above did exactly what I wanted it to, it created a series of methods that allowed me to access the information I wanted but, as you can see it’s not easy to understand, would be quite difficult to edit and, if anything goes wrong, almost impossible to debug.
 
-
-
 Perhaps a better example of considering future developers lies within the applications test suite. To the left is the file structure for the application with all of the test related files open. Each Ruby logic file has a corresponding test file that tests all of the key features. This helps future developers work out how the program fits together and allows them to more easily trace where any problems that they might introduce actually come from.
-
-
 
 The full git repo for this project is available here.
 
@@ -494,97 +278,50 @@ The full git repo for this project is available here.
 
 
 
-
-
-
-
-
-
-
 Jenkins
-
-Within GDS we use a management tool called Jenkins to help manage what we run on different machines. Technically anything that can be done using Jenkins can be done by porting onto the machine in question and running commands manually, what Jenkins does then is to provide a quick and easy way to do this within a friendly UI. It also allows users to see what other users are doing, this helps users to keep track of who’s working on what and ensures that things aren’t being done twice. Jenkins can be used to do any number of things but most commonly developers use it to run rake tasks and to deploy a specific branch that isn’t master. This allows developers to use a branch other than production to push changes to. This is especially useful if there are technically tricky changes that need to be checked for failure or if a change can’t rely fully on automatic tests and has to be tested manually.
-
-
-
+Within GDS we use a management tool called Jenkins to help deploy things to different machines. Technically anything that can be done using Jenkins can be done by logging onto the machine in question and running commands manually, Jenkins provides a quick and easy way to do this within a friendly UI. It also allows users to see what other users have done, this helps users to keep track of who’s working on what and ensures that things aren’t being done twice. Jenkins can be used to do any number of things but most commonly developers use it to run rake tasks and to deploy a specific branch that isn’t master. This allows developers to use a branch other than production to push changes to. This is especially useful if there are technically tricky changes that need to be checked for failure or if a change can’t rely fully on automatic tests and has to be tested manually.
 
 
 A/B Tests
+At GDS we often use feature flags to run A/B tests. A/B tests rely on two versions of a code base being shown to users at the same time. If we make a particularly big change or if we are unsure what effect a code change will have, we can roll out new code to a small percentage of users. This has a number of advantages, firstly, if a code change is bad, say that it makes something harder to find or stops something from working, only a small number of users will be affected; it’s better for 10% of users to be adversely affected than 100%. A/B test also allow us to measure change, GDS employs a large number of data analysts, when an A/B test is run a data analyst can check both sides of a test to see which performs better. This means that we can be more sure that a code change works before it is deployed out to the general public.
+The screengrab above shows the code that we as the search team used to implement an a/b test. As you can see it send the user down a different path depending on whether they have been set to use the `B Variant` of code. This allocation is random, and percentage of users sent either way is set by the development team. It is this sort of thing that the Search Performance Explorer worked with in order to visualise the search results for each side of the test.
 
-At GDS we often use feature flags to run A/B tests. A/B tests rely on two versions of a code base being shown to users at the same time. If we make a particularly big change or if we are unsure what effect a code change will have, we can roll out new code to a small percentage of users. This has a number of advantages, firstly, if a code change is bad, say that it makes something harder to find or stops something from working, only a small number of users will be affected; it’s better for 10% of users to be adversely affected than 100%. A/B test also allow us to measure change, GDS employs a large number of data analysts, when an A/B test is run a data analyst can check both sides of a test to see which performs better. This means that we can be more sure that a code change works before it is run out to the general public.
+The Search Performance Explorer had a very small user base that was comprised primarily of developers. This meant that they were much more likely to get the code from GitHub and run the application locally than rely on the production environment. I did however have to consider how I was going to deploy my application to ensure the best experience for users who weren’t running it locally.
 
-The screengrab above shows the code that we as the search team used to implement an a/b test. As you can see it send the user down a different path depending on whether they have been set to use the `B Variant` of code. This allocation is random and percentage of users sent either way is set by the development team. It is this sort of thing that the Search Performance Explorer worked with in order to visualise the search results for each side of the test.
+All of the code for my application was stored on GDS’s repository on Github. The settings of this repository require all pull requests to be approved by another member of GDS before they are merged into the master branch. This is done to ensure that code is of good quality and doesn’t pose a risk to the wider organisation. The result of is that a person can be sure that any code on the master branch of code is production ready. This is what’s known as a code review and is generally done in two places. The first is while the story is being worked on, we try to work in pairs so that as each of us gets more context on all of the applications that we manage as a team. The 2nd is done on GitHub when we create pull requests. To the left you can see examples of the kinds of communication that goes on GitHub. This communication serves a few purposes, first and foremost it aims to catch mistakes that we don’t want in production. It also increases knowledge amongst all the developers around what changes are happening and why they are being made. This form of communication does have its limitations. It is quite easy to miss, it only takes two people to get code into production, one to write and one to review. This means that the people who might have the most context lose out on changes being made. It’s also not always easy to make your intentions clear when writing code, this means that some things may have to be cleared up by making comments. This does serve as a sort of code decision record though to there are some upsides. Whilst everyone is clear on the reasons for the code review (it’s in the name), they may be less clear on the reasons for the code change itself. It is for this reason that we make sure we write notes on each pull request that outline why changes are being made. This small piece of communication puts everyone on the same page and everyone involved understands the purpose of the change. This message becomes doubly important when the changes that you’re proposing are to a repository that is managed by another team. Whilst it’s arguable that all teams work toward a common goal of improving GDS the team that manage a repository will ultimately have the best knowledge of it and have the best view over its direction. This means that you, as the person submitting the PR, have to be more sensitive to the wishes of the reviewer than would perhaps be necessary if it was a repo that you were more closely involved with. This sensitivity to the dynamics of the situation could take the form of a more detailed PR outline or less push back on requested changes to the PR. In short it is important to realise that the people who own the repo have ultimate responsibility for it and any changes that are made to it are done so at their discretion. In situations like this it is also worth talking in person to the team who owns the repository you want to make changes to. Having an informal talk with the team is an excellent method of communication this scenario for a number of reasons; it has the shortest feedback loop which means that you can quickly ascertain the perception of the proposed changes, it makes you approachable so that the other team know they can come to you if they have questions about your changes, finally it’s respectful to give prior warning of changes and to acknowledge that you’re asking to make changes to a thing that you don’t own. It could be that your suggested changes would be too different or too far removed from the direction of the project. If this were the case it would be a waste of your time to do the changes in the first place. This may also make it easier for them to understand your changes when you make them, this negates any chance that they would be blindsided by the proposed changes which could disrupt the effectiveness of your well intentioned request to make changes. Obviously there’s the specific communication on git PR’s when I need feedback on a piece of code but in general there are many forms of communication and I utilise many of them on a daily basis. From informal discussions to more organised one on one meetings if something I need is quick and the person who I need it from is nearby and we’re well acquainted, through email and instant messaging if I am less familiar with the person or the issue is more complex all the way to organising a show and tell or presentation if something that I’ve been working on requires the attention of a number of people at one time.
 
-
-
-The Search Performance Explorer had a very small user base that was comprised primarily of developers. This meant that they were much more likely to get the code from Github and run the application locally than rely on the production environment. I did however have to consider how I was going to deploy my application to ensure the best experience for users who weren’t running it locally.
-
-
-
-All of the code for my application was stored on GDS’s repository on Github. The settings of this repository require all pull requests to be approved by another member of GDS before they are merged into the master branch. This is done to ensure that code is of good quality and doesn’t pose a risk to the wider organisation. The result of is that a person can be sure that any code on the master branch of code is production ready. The screen grab below shows an interaction that I had with another developer on the team on git. Their comments amount to a list of things that needed fixing before the code could be deemed production ready and therefore merged. Git allows this discussion with other developers and makes sure that everyone’s work is at the required standard.
-
-
-
-I’d also linked the Search Performance Explorer to a tool called Cirlce CI. Circle CI runs a repository’s test base before it allows a pull request to be opened. The tests for this codebase were run using a rake task that also included a linter that was designed to catch any syntactic problems with the code. This meant that before I opened a pull request all of my tests had to pass and all of my code had to be written in the correct way. After a pull request was opened it had to be reviewed by another developer before it could be merged to master. With this in mind I chose to host the search performance explorer on a platform called Heroku. Heroku is a free service that allows users to host a number of applications and manage their release through Github. Being able to link the production environment to Github was the major reason that I chose to use Heroku. It has a setting that means that if the code on your master branch is updated Heroku will automatically re-release your application with the new code. Given that I knew that any new updates to master had been approved by another GDS developer I felt confident that this was the best course of action because it required the least input from me. I also wasn’t particularly concerned with the idea of downtime; everyone who used this application sat on the same desk as me so could simply tell me if it was broken and I could roll back to a previous version.
-
-Heroku also allowed me to make a second app that I could use as a staging environment. I used this environment to try out code that I had on other branches, the advantages of this were two fold. Firstly, I could manually check my code changes and ensure that they weren’t going to break the live version of the app when they were merged into master. Secondly it allowed me to ask for feedback from users on design choices that I had made without risk of making bad decisions on the production environment.
-
-Within this section I have covered a number of tools that are widely used within GDS to ensure that deployments run smoothly and that downtime for users is kept to an absolute minimum. There are myriad things that a development team can do to achieve this but they are not always necessary, small applications don’t have large user bases and it is important to match the tools and deployment process to the things that your application requires.
-
+I’d also linked the Search Performance Explorer to a tool called CircleCI. CircleCI runs a repository’s tests before it allows a pull request to be merged. The tests for this codebase were run using a rake task that also included a linter that was designed to catch any syntactic problems with the code. This meant that before I opened a pull request all of my tests had to pass, and all of my code had to be written in the correct way. After a pull request was opened it had to be reviewed by another developer before it could be merged to master. With this in mind I chose to host the search performance explorer on a platform called Heroku. Heroku is a free service that allows users to host a number of applications and manage their release through Github. Being able to link the production environment to GitHub was the major reason that I chose to use Heroku. It has a setting that means that if the code on your master branch is updated Heroku will automatically re-release your application with the new code. Given that I knew that any new updates to master had been approved by another GDS developer I felt confident that this was the best course of action because it required the least input from me. I also wasn’t particularly concerned with the idea of downtime; everyone who used this application sat on the same desk as me so could simply tell me if it was broken and I could roll back to a previous version.
+Heroku also allowed me to make a second app that I could use as a staging environment. I used this environment to try out code that I had on other branches, the advantages of this were two-fold. Firstly, I could manually check my code changes and ensure that they weren’t going to break the live version of the app when they were merged into master. Secondly it allowed me to ask for feedback from users on design choices that I had made without risk of making bad decisions on the production environment.
+Within this section I have covered a number of tools that are widely used within GDS to ensure that deployments run smoothly and that downtime for users is kept to an absolute minimum. There are myriad things that a development team can do to achieve this, but they are not always necessary. Small applications don’t have large user bases and it is important to match the tools and deployment process to the things that your application requires.
 
 
 Analysis
-
 Within GDS we break our overarching goals into chunks that are completed within blocks of time called missions. These are large goals that are not achievable by a single person in a quantifiable period of time. This might include something like “improve how users search for things on gov.uk”. Now clearly this is a very broad requirement and would touch a lot of different bases within the large codebase within GDS. This ‘mission statement’ is given to a number of teams to whom it is most relevant. Upon getting this statement the individual teams will work on breaking it up and decide how to most efficiently complete work that will add value within the bounds of the mission statement.
 
 
-
-
-
 Conversion of Requirements
+Before creating any tasks or stories that developers can work on the functionality of the thing that is to be built needs to be devised. This should be done by speaking to users, finding out what issues they have and working out whether there is a user need that can be filled with a new piece of software. I’ve recently moved to a new team that is concerned with building a platform or piece of software that can attach to existing applications in order to give their owners easy access to their metrics. Given that we were tasked with building this from the ground up we first needed to assess the current state of metric gathering within GDS including how it was done, how people felt about it and what they felt would happen in a perfect world. In order to get this information, we created two separate boards. The first is a series of print outs from people on existing teams explaining how metrics work for them and how they feel that they can be improved. I have made a diagram of the second below. It is acollection of post it notes written by members  of different teams across GDS and it outlines their thoughts and experiences on logging, metrics and alerts in a logical way. The order of this board allows our project manager the opportunity to find problems where they exist and devise solutions that can be turned into user stories. It is worth noting that our job is not simply to give users what they want, it is to consider the root cause of issues that they have and devise solutions from there.
 
-Before creating any tasks or stories that developers can work on the functionality of the thing that is to be built needs to be devised. This should be done by speaking to users, finding out what issues they have and working out whether there is a user need that can be filled with a new piece of software. I’ve recently moved to a new team that is concerned with building a platform or piece of software that can attach to existing applications in order to give their owners easy access to their metrics. Given that we were tasked with building this from the ground up we first needed to assess the current state of metric gathering within GDS including how it was done, how people felt about it and what they felt would happen in a perfect world. In order to get this information we created two separate boards. The first is a series of print outs from people on existing teams explaining how metrics work for them and how they feel that they can be improved. I have made a diagram of the second below. It is a collection of post it notes written by members of different teams across GDS and it outlines their thoughts and experiences on logging, metrics and alerts in a logical way. The order of this board allows our project manager the opportunity to find problems where they exist and devise solutions that can be turned into user stories. It is worth noting that our job is not simply to give users what they want, it is to consider the root cause of issues that they have and devise solutions from there.
-
-
-
-Before creating user stories it may be useful to create a use case. At its’ core, a use case is a relationship between a person (actor) and a task (action). Use cases can be as simple as “a developer writes code” but this can be scaled near infinitely to encompass an entire team or company. Within GDS we don’t create formal use cases in each team (although there may be some that do) so instead of using an example of a use case that I’ve created for work I’ve created an abstract use case around the interaction between a barista and a customer at a coffee shop to illustrate how they can be used. The large rectangle represents the scope of our interaction, for this example the scope is the ordering and making of a coffee. Obviously this could include someone ordering the coffee from distribution and be extended all the way to a farmer growing the coffee but to keep things succinct I’ve limited the scope to the simple transaction. The actors involved are outside of the scope of the interaction and must complete all the tasks for the interaction to be completed. A diagram like this can help the project manager of a project to understand the things that must be completed by the developers and users and in turn be used to help inform artifacts that are more closely related to the development of a piece of software.
-
+Before creating user stories it may be useful to create a use case. At its’ core, a use case is a relationship between a person (actor) and a task (action). Use cases can be as simple as “a developer writes code” but this can be scaled near infinitely to encompass an entire team or company. Within GDS we don’t create formal use cases in each team (although there may be some that do) so instead of using an example of a use case that I’ve created for work I’ve created an abstract use case around the interaction between a barista and a customer at a coffee shop to illustrate how they can be used. The large rectangle represents the scope of our interaction, for this example the scope is the ordering and making of a coffee. This could include someone ordering the coffee from distribution and be extended all the way to a farmer growing the coffee but to keep things succinct I’ve limited the scope to the simple transaction. The actors involved are outside of the scope of the interaction and must complete all the tasks for the interaction to be completed. A diagram like this can help the project manager of a project to understand the things that must be completed by the developers and users and in turn be used to help inform artefacts that are more closely related to the development of a piece of software.
 
 
 
 
 User Stories
-
 After the problem has been analysed, it can be broken into chunks called ‘user stories’ these are relatively broad statements that isolate a specific problem and are specific to the team that’s working on them. User stories are written from the perspective of a user and usually use a specific format.
-
-“As a … I need … so that …“
-
+	“As a … I need … so that …“
 This gives the team enough information on the task at hand to be able to order the stories by usefulness and break the story up into tasks.
-
-
 
 The first part of the user story “As a…” lets the team know who will benefit from completion of the story, as such this helps to work out how high of a priority the story should be. A story from the point of a wide user base will help more people and as such will generally be higher priority than one which will only benefit a small number of users.
 
-
-
 The 3rd part concentrates on the reason that the thing is needed. This also helps to prioritise the story by gauging its’ net benefit. A story that helps a small amount of people a lot or will save them a large amount of time may well be more worthwhile than one that will help lots of people in a relatively minor way.
-
-
 
 The 2nd section of a user story is perhaps the most important for developers. It tells us what the thing that we’re doing actually is. This is the final part of prioritisation as the team tries to deliver the highest possible benefit with the smallest amount of work. With this final part of a user story, developers know what needs to be worked on when and can break the user story into smaller, individually manageable ‘tasks’.
 
 
-
-
-
 Tasks
-
 Tasks are set by the team and are meant to be easily digestible pieces of work that can be done by a small number of people within the team. It is the tasks that are directly worked on day by day by developers, data analysts and user researchers. These tasks need to be small enough to have a quantifiable scope; the people working on the story need to know roughly how long it will take. In the event that the task will take an indeterminate amount of time then it may be that that task should be split into multiple, more manageable tasks, or a separate user story. This means that everyone on the team has to analyse work loads constantly to make sure that their workload is feasible and that the work that’s been completed is tracked.
 
 
-
-
-
 Trello
-
 These tasks need to be organised in some way so that the team know who is working on what. This helps us to generate a shared understanding and prevents one person becoming a knowledge silo (ie. being the only person to know about a specific subject).  Within GDS we use a tool called Trello. Trello is a collaborative working tool that allows us to visualise our current workload as a board. This board has cards attached to it that can in turn have people or other cards attached to them. Imagine a big whiteboard with sticky notes all over it connected by bits of string, essentially Trello is like that but presented in a way that is understandable for everyone involved. This is what we use to see who’s working on what, to see what has to be worked on next, to prioritise stories and to see what each task is attached to.
